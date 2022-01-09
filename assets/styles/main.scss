@@ -1,0 +1,17 @@
+.stack > * + * {
+  margin-top: 0.5rem;
+}
+
+ul,
+li,
+p,
+{
+  margin: 0;
+}
+
+header,
+footer,
+main {
+  border: 1px solid darkred;
+  padding: 1rem;
+}
