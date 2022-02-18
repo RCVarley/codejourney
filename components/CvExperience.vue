@@ -1,6 +1,6 @@
 <template class="experience">
   <h1>Experience</h1>
-  <div v-for="(pos, pIndex) in modelValue" 
+  <div v-for="(pos, pIndex) in modelValue"
        :key="pIndex"
        class="experience__position">
     <h2 class="experience__title">{{pos.title}}</h2>
@@ -30,7 +30,7 @@
 <script lang="ts">
 import {defineComponent, PropType} from 'vue';
 import DateRange from "./DateRange.vue";
-import {Position} from '../types/types';
+import type {Position} from '../types/types';
 
 export default defineComponent( {
   name: "CvExperience",
@@ -39,7 +39,7 @@ export default defineComponent( {
   },
   props: {
     modelValue: {
-      type: Array as PropType<Position[]>, 
+      type: Array as PropType<Position[]>,
       required: true,
     },
   },

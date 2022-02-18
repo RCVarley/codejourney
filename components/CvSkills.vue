@@ -11,7 +11,7 @@
 <script lang="ts">
 import {defineComponent, PropType} from "vue";
 import TagList from "./TagList.vue";
-import type {Tags} from "../types/types";
+import type {TagGroup} from "../types/types";
 
 export default defineComponent( {
   name: "CvSkills",
@@ -20,7 +20,7 @@ export default defineComponent( {
   },
   props: {
     modelValue: {
-      type: Object as PropType<Tags[]>,
+      type: Object as PropType<TagGroup[]>,
       required: true,
     },
   },

@@ -1,7 +1,7 @@
 <template>
   <h2>{{title}}</h2>
   <ul>
-    <li 
+    <li
       v-for="(tag, index) in tags"
       :key="index">
       {{tag}}
@@ -23,7 +23,7 @@ export default defineComponent( {
     },
     title: {
       type: String,
-      default: "tags", 
+      default: "tags",
     },
   },
 })

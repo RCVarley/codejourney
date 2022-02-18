@@ -1,6 +1,6 @@
 <template class="highlights">
   <h1>{{ title }}</h1>
-  <p 
+  <p
     v-for="(h, index) in modelValue"
     :key="index"
     class="highlights__highlight">
@@ -11,7 +11,7 @@
 
 <script lang="ts">
 import {PropType, defineComponent} from "vue";
-import {Highlight} from "../types/types";
+import type {Highlight} from "../types/types";
 
 export default defineComponent({
   name: "CvHighlights",
@@ -21,7 +21,7 @@ export default defineComponent({
       required: true,
     },
     title: {
-      type: String, 
+      type: String,
       default: 'Highlights',
     },
   },

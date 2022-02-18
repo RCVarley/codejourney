@@ -16,7 +16,7 @@ export interface Highlight {
   caption: string,
 }
 
-export interface Tags {
+export interface TagGroup {
   title: string,
   tags: string[],
 }

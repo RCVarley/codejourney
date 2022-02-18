@@ -1,7 +1,7 @@
 <template class="summary">
   <h1>Summary</h1>
-  <p 
-    v-for="(p, index) in modelValue" 
+  <p
+    v-for="(p, index) in modelValue"
     :key="index"
     class="summary__paragraph">
     {{ p }}
@@ -20,7 +20,7 @@ export default defineComponent( {
       required: true,
     },
   }
-})
+});
 </script>
 
 <style scoped>

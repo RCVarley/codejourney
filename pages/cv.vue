@@ -18,18 +18,18 @@
 import CvExperience from "components/CvExperience.vue";
 import CvSummary from "components/CvSummary.vue";
 import CvHighlights from "../components/CvHighlights.vue";
-import CvSkills from "../components/CvSkills.vue"; 
+import CvSkills from "../components/CvSkills.vue";
 import CvKeyWords from "../components/CvKeyWords.vue";
 import CvEducation from "../components/CvEducation.vue";
 import {defineComponent} from "vue";
-import type {Position, Highlight, Tags, Course} from "../types/types";
+import type {Position, Highlight, TagGroup, Course} from "../types/types";
 
 interface Data {
   summary: string[],
   experience: Position[],
   highlights: Highlight[],
-  skills: Tags[],
-  keyWords: Tags[],
+  skills: TagGroup[],
+  keyWords: TagGroup[],
   education: Course[],
   traits: Highlight[],
 }
@@ -58,7 +58,7 @@ export default defineComponent({
         start: new Date( '2020/03/01' ),
         current: true,
         feats: [
-          'One part of a two person team who planned and developed a package based architecture for creating Umbraco sites.', 
+          'One part of a two person team who planned and developed a package based architecture for creating Umbraco sites.',
           'Wrote the bulk of our modular, extensible checkout that\'s used across all of our e-commerce sites.',
           'Deconstructed existing mockups in order to create prototypes for features and pages using Figma, enabling me to identify features missing from the API as well as ambiguous UI requirements.',
           'Overhauled the error handling system, resulting in a single generic implementation that\'s used across all of our sites.',

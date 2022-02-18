@@ -10,15 +10,15 @@
 <script setup></script>
 
 <script lang="ts">
-import {Tags} from "../types/types";
 import {defineComponent, PropType} from "vue";
+import type {TagGroup} from "../types/types";
 
 export default defineComponent( {
   name: "KeyWords",
   props: {
     modelValue: {
-      type: Object as PropType<Tags[]>,
-      required: true, 
+      type: Object as PropType<TagGroup[]>,
+      required: true,
     },
   },
 })

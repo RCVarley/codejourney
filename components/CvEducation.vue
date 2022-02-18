@@ -16,7 +16,7 @@
 <script lang="ts">
 import {defineComponent, PropType} from "vue";
 import DateRange from "./DateRange.vue";
-import {Course} from "../types/types";
+import type {Course} from "../types/types";
 
 export default defineComponent({
   name: "CvEducation",
