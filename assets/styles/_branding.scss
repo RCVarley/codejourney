@@ -1,0 +1,19 @@
+:root {
+  //--c1-darker: #212930;
+  //--c1-dark: #2A343C;
+  //--c1-light: #3B4854;
+  //--c1-lighter: #435360;
+  --c1: #2C363F;
+  --c2: #e75a7c;
+  --c3: #bf5408;
+  --c4: #5C7284;
+  --c5: #F2F5EA;
+
+  --background: var(--c1);
+  --on-background: var(--c5);
+
+  .dark {
+    --background: var(--c5);
+    --on-background: var(--c1);
+  }
+}

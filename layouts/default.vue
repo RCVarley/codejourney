@@ -1,5 +1,5 @@
 <template>
-  <div class="stack">
+  <p-stack split-index="2">
     <default-header/>
     <main>
       <slot>
@@ -7,16 +7,17 @@
       </slot>
     </main>
     <default-footer/>
-  </div>
+  </p-stack>
 </template>
 
 <script>
 import DefaultHeader from "../components/layout/DefaultHeader";
 import DefaultFooter from "../components/layout/DefaultFooter";
 import {defineComponent} from "vue";
+import PStack from "../components/primitives/PStack";
 
 export default defineComponent( {
-  components: {DefaultFooter, DefaultHeader}
+  components: {PStack, DefaultFooter, DefaultHeader}
 });
 </script>
 
